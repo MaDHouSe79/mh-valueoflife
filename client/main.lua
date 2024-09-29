@@ -61,7 +61,7 @@ end
 
 local function CheckDead()
     if GetResourceState("qb-ambulancejob") ~= 'missing' then
-        if exports['qb-ambulancejob']:IsPlayerDead() then
+        if exports['qb-ambulancejob']:IsPlayerDead() and not isPlayerDead then
             isPlayerDead = true
             QBCore.Functions.TriggerCallback("mh-valueoflife:server:takelife", function(lives)
                 if type(lives) == 'number' then 
