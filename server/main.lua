@@ -44,6 +44,11 @@ local function ResetLives(id)
 end
 exports('ResetLives', ResetLives)
 
+RegisterNetEvent('hospital:server:RevivePlayer', function(playerId, isOldMan)
+	local Patient = QBCore.Functions.GetPlayer(playerId)
+    if Patient then TriggerClientEvent('mh-valueoflife:client:isDead', playerId, false) end
+end)
+
 QBCore.Functions.CreateCallback("mh-valueoflife:server:takelife", function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
     if Player then
