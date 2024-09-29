@@ -71,13 +71,9 @@ local function CheckDead()
                         DeleteChar()
                     elseif lives >= 1 then
                         QBCore.Functions.Notify(Lang:t('info.total_lives', {lives = lives}), 'primary')
-                        Wait(5000)
-                        isPlayerDead = false
                     end
                 end
             end)
-        else
-            isPlayerDead = false
         end
     end
 end
@@ -114,9 +110,13 @@ AddEventHandler('onResourceStop', function(resource)
     end
 end)
 
+RegisterNetEvent('mh-valueoflife:client:isDead', function(state)
+    isPlayerDead = state
+end)
+
 CreateThread(function()
     while true do
-        if isLoggedIn and not isPlayerDead then CheckDead() end
+        if isLoggedIn then CheckDead() end
         Wait(1000)
     end
 end)
