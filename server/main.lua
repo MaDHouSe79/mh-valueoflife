@@ -127,3 +127,7 @@ QBCore.Commands.Add('takelive', Lang:t('info.take_live'), {{ id = 'player id', h
         end
     end
 end, 'admin')
+
+CreateThread(function()
+    MySQL.Async.execute('ALTER TABLE players ADD COLUMN IF NOT EXISTS lives INT NOT NULL DEFAULT 3')
+end)
