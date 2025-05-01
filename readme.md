@@ -39,27 +39,21 @@
 - `/resetlive [id]` Reset lives for a player ID (admin only)
 - `/resetalllives` Reset all players lives to max.
 
-# Installation:
-- Don't forget to add the database and extra code.
-- After you are all done, you must restart the server.
+# Installation
+- Step 1: First stop your server.
+- Step 2: Copy the directory `mh-valueoflife` to `resources/[mh]/`.
+- Stap 3: Add `ensure [mh]` in `server.cfg` below `ensure [defaultmaps]`.
+- Step 4: After you are all done, you must restart the server.
 
 # Server.cfg example
 ```conf
 ensure qb-core
-ensure mh-cashasitem
 ensure mh-valueoflife
 ensure [qb]
 ensure [standalone]
 ensure [voice]
 ensure [defaultmaps]
 ensure [mh]
-```
-
-# Add To Database
-- you can set a max lives if you change the number 3 to 5 or higher, don't go to hight ;).
-- if you change 3 you need to go to server/main.lua and change `local maxLives = [new number]` 
-```sql
-ALTER TABLE `players` ADD COLUMN `lives` INT(11) NOT NULL DEFAULT 3
 ```
 
 # Add Extra Code for qb-ambulancejob
