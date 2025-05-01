@@ -22,7 +22,7 @@
   </a>      
 </p>
 
-# MH-ValueOfLife (only for whitelisted servers) (Die HARD RP)
+# MH Value Of Life (Die HARD RP)
 - You have 3 live's, but when you hit 0 live's, the char will be deleted, cause it's dead and you have to create a new char.
 - The value of life is an economic value used to quantify the benefit of avoiding a fatality.
 - Admins can give and take lives, you can also reset all players lives, or you can buy as a player an extra live but this cost a lot of money.
