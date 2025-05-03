@@ -4,6 +4,6 @@
     <h3 align="center">A passionate allround developer </h3>    
 </p>
 
-MH Value Of Life (Die HARD RP)
+# MH Value Of Life (Die HARD RP)
 - Download: https://github.com/MH-Scripts
-- Youtube: https://www.youtube.com/c/@MaDHouSe79
+- Youtube: https://www.youtube.com/@MaDHouSe79
