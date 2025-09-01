@@ -22,6 +22,10 @@
   </a>      
 </p>
 
+<p align="center">
+    <img src="https://komarev.com/ghpvc/?username=MaDHouSe79&label=Profile%20views&color=3464eb&style=for-the-badge&logo=star&abbreviated=true" alt="MaDHouSe79" style="padding-right:20px;" />
+</p>
+
 # MH Value Of Life (Die HARD RP)
 - You have 3 live's, but when you hit 0 live's, the char will be deleted, cause it's dead and you have to create a new char.
 - The value of life is an economic value used to quantify the benefit of avoiding a fatality.
